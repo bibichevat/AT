@@ -23,7 +23,6 @@ public class Main {
         */
         text = text.replaceAll("[^a-zA-Zа-яА-Я0-9ёЁ]", "").toLowerCase();
         // посимвольное сравнение левой и правой части строки
-        System.out.println(text);
         for (int i = 0; i < text.length() / 2; i++) {
             // если пара символов не совпадает, строка не является палиндромом
             if (text.charAt(i) != text.charAt(text.length()-1-i)) {
